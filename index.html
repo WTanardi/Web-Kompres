@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komunitas Prestasi</title>
+    <link rel="stylesheet" href="/output.css">
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/x-icon" href="/favicon/faviconweb.ico">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body class="text-white font-ff-primary bg-gradient-to-br from-[#700093] to-[#FF9B04] overflow-x-hidden" id="home">
+
+    <!-- Header -->
+    <header class=" py-6 fixed md:relative md:pb-0 w-full transition-all duration-500 2xl:py-10">
+        <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+            <div class="text-lg mgx-auto font-bold shadow-2xl 2xl:text-2xl">
+                <a href="#home">Komunitas Prestasi</a>
+            </div>
+            <div class="hidden md:flex space-x-12 items-center 2xl:text-2xl">
+                <a href="#article">Article</a>
+                <a href="#about">About</a>
+                <a href="#riskel">Riskel</a>
+                <a href="#pr">PR</a>
+                <a href="#hrd">HRD</a>
+            </div>
+            <button class="md:hidden mobile-menu-button">
+                <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z" fill="white"/></svg>
+            </button>
+        </div>
+        <div class="hidden mobile-menu mt-2 transition-all duration-500">
+            <ul>
+                <li class="menu-btn" id="home-btn">
+                    <a href="#home" class="block text-base px-8 sm:px-12 py-4 hover:bg-clr-accent transition duration-300">Home</a>
+                </li>
+                <li class="menu-btn">
+                    <a href="#article" class="block text-base px-8 sm:px-12 py-4 hover:bg-clr-accent transition duration-300">Article</a>
+                </li>
+                <li class="menu-btn">
+                    <a href="#about" class="block text-base px-8 sm:px-12 py-4 hover:bg-clr-accent transition duration-300">About</a>
+                </li>
+                <li class="menu-btn">
+                    <a href="#riskel" class="block text-base px-8 sm:px-12 py-4 hover:bg-clr-accent transition duration-300">Riskel</a>
+                </li>
+                <li class="menu-btn">
+                    <a href="#pr" class="block text-base px-8 sm:px-12 py-4 hover:bg-clr-accent transition duration-300">PR</a>
+                </li>
+                <li class="menu-btn">
+                    <a href="#hrd" class="block text-base px-8 sm:px-12 py-4 hover:bg-clr-accent transition duration-300">HRD</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    
+    <!-- Hero -->
+    <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 pt-20 md:pt-16">
+        <div class="flex flex-wrap md:flex-nowrap w-full">
+
+            <!-- Dots -->
+            <nav class="inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden md:block">
+                <div class="absolute left-50 transform -translate-x-1.5 space-y-6 mt-[25vh] 2xl:mt-52">
+                    <a href="#home" class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 bg-secondary">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">
+                            Home
+                        </span>
+                    </a>
+                    <a href="#article" class="nav-dot block w-7 h-7 rounded-full border-4 bg-secondary">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">
+                            Articles
+                        </span>
+                    </a>
+                    <a href="#about" class="nav-dot block w-7 h-7 rounded-full border-4 bg-secondary">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">
+                            About
+                        </span>
+                    </a>
+                    <a href="#riskel" class="nav-dot block w-7 h-7 rounded-full border-4 bg-secondary">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">
+                            Riskel
+                        </span>
+                    </a>
+                    <a href="#pr" class="nav-dot block w-7 h-7 rounded-full border-4 bg-secondary">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">
+                            PR
+                        </span>
+                    </a>
+                    <a href="#hrd" class="nav-dot block w-7 h-7 rounded-full border-4 bg-secondary">
+                        <span class="bg-black p-2 rounded-md ml-10 opacity-0">
+                            HRD
+                        </span>
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Hero Title -->
+            <div class="flex flex-wrap lg:flex-nowrap md:pt-20 md:mx-16 justify-center md:justify-between max-w-xl md:max-w-full mt-0 lg:my-0 lg:mr-0 lg:py-28 items-center w-full xl:py-32">
+                <div class="container">
+                    <h1 class="font-bold text-6xl text-center md:text-left leading-snug md:leading-none 2xl:text-8xl">
+                        Komunitas <br> Prestasi
+                    </h1>
+                    <p class="text-xl pt-5 text-center md:text-left md:pl-1 leading-loose md:leading-snug md:text-lg xl:leading-loose 2xl:text-3xl 2xl:leading-loose">
+                        Komunitas Kepenulisan dan Riset
+                        <br>
+                        Fakultas Sains dan Teknologi
+                        <br>
+                        Universitas Airlangga
+                    </p>
+                </div>
+                <img src="/img/Hero logo-bottom-shadow.png" alt="Logo kompres dan kabinet cakrawala karya" class="pt-10 max-h-96 block md:hidden">
+                <img src="/img/Hero logo.png" alt="Logo kompres dan kabinet cakrawala karya" class="pt-10 lg:py-0 lg:px-16 max-h-96 hidden md:block md:my-16 md:pt-0 lg:max-h-72 lg:my-0 xl:max-h-96 xl:my-0 xl:px-0 2xl:max-h-[30rem]">
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Article -->
+    <div class="container department" id="article">
+        <section class="w-full pt-6">
+            <h2 class="secondary-title">Artikel Terkini</h2>
+        </section>
+        <div class="article">
+            <h3 class="article-title"> Meniti Jejak Ketertarikan Kepenulisan Mahasiswa Sains melalui Organisasi Multimanfaat Komunitas Prestasi</h3>
+            <p class="section-paragraph article-paragraph">
+                &emsp; &emsp; Mahasiswa sebagai agent of change menjadi harapan masyarakat untuk kontribusi nyata yang akan diberikan nantinya. Dalam menghadapi stigma dari pernyataan tersebut, tentunya posisi mahasiswa dalam perkuliahan menjadi fase metamorfoses yang sangat penting. Tak heran apabila banyak hal hal yang bisa mahasiswa pilih sebagai fokus ilmu dan praktek yang bisa dikembangkan selama masa perkuliahan.
+                <br>
+                &emsp; &emsp; Organisasi baik tingkat universitas, fakultas, dan himpunan sebagai sarana masif pengembangan softskill dan hardskill menjadi sangat diminati bagi mahasiswa. Eksistensi dan peran organisasi di dalamnya tidak hanya mengenai relasi luas dewasan ini. Semakin bertambah tahun, organisasi mengalami alih peran dan fungsi menjadi lebih kompleks baik secara sirkular maupun longitudinal. Namun dalam perkembangan organisasi yang pesat, masih ada segi kekurangan yang muncul dan perlu ditindaklujuti. Satu diantaranya, karena minat mahasiswa belum bisa terwadahi dengan baik.
+                <br>
+                &emsp;&emsp; Komunitas Prestasi, sebagai sebuah Badan Semi Otonom (BSO) baru yang ada dalam ruang lingkup Fakultas Sains dan Teknologi (FST), Universitas Airlangga. Dengan adanya Komunitas Pretasi, adanya minat mahasiswa FST dalam bidang kepenulisan dan riset dapat diwadahi dalam satu tempat dengan baik. Eksistensi dan peran Komunitas Prestasi dapat dibuktikan dengan sejumlah pencapaian yang telah didapatkan oleh para pengurus melalui beberapa prestasi.
+                <br>
+                &emsp; &emsp; Peran serta Komunitas Prestasi penting adanya, sebagai sebuh organisasi penanaman softskill dan hardskill yang terealisasi dalam program kerja dan agenda akan menjadi pengalaman baru di luar proses pengajaran di kelas. Semoga Komunitas Prestasi bisa menjadi tempat nyaman untuk berprogress dan berproses kedepannya.
+            </p>
+        </div>
+        <div class="article">
+            <h3 class="article-title">Membersamai Internalisasi Komunitas Prestasi dengan Pengadaan Welcome Party</h3>
+            <p class="section-paragraph article-paragraph">
+                &emsp; &emsp; 12 Februari 2022 : Tanggal bersejarah bagi Komunitas Prestasi kabinet Cakrawala Karya untuk saling mengenal. Menjadi sebuah keluarga baru tentunya tidak mudah untuk menjadi akrab satu sama lain, butuh banyak penyesuaian dan adaptasi kedepannya.
+                <br>
+                &emsp; &emsp; Perjalanan panjang dimuali dengan adanya “Welcome Party” atau jika ditransformasikan ke dalam Bahasa Indonesia mempunyai arti “Sambutan Selamat Datang”. Acara ini diprakarsai oleh Departemen Human Research and Development (HRD) sebagai pengembangan Sumber Daya Mahasiswa (SDM) yang ada di Komunitas Prestasi dalam ruang lingkup internal dan eksternal.
+                <br>
+                &emsp; &emsp; Tidak hanya monoton pada acara inti saja, namun serangkaian games juga turut mewarnai kemeriahan acara ini. Dengan adanya Welcome Party diharapkan akan semakin memperkuat sarana internalisasi di antara anggota Komunitas Prestasi selam satu tahun kepengurusan kedepannya.
+            </p>
+        </div>
+    </div>
+    
+    <!-- About -->
+    <div class="container department lg:flex lg:justify-between lg:items-start xl:pb-28 lg:pt-7 2xl:pb-36" id="about">
+
+        <!-- Kompres -->
+        <section class="w-full lg:w-[375px] xl:w-[500px] 2xl:w-[610px]">
+            <h2 id="about" class="secondary-title">Komunitas Prestasi</h2>
+            <p class="section-paragraph">
+                Komunitas Prestasi atau yang kerap disebut sebagai Kompres adalah Badan Semi Otonom (BSO) di Fakultas Sains dan Teknologi (FST) yang bergerak dalam bidang kepenulisan dan riset.
+            </p>
+            <div class="subsection">
+                <h3 class="subsection--title">Visi</h3>
+                <p class="section-paragraph">
+                    Mewujudkan iklim prestatif dan kompetitif untuk mengoptimalkan potensi sumber daya mahasiswa FST di bidang akademik, kepenulisan, serta bisnis dalam skala nasional hingga internasional.
+                </p>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection--title">Misi</h3>
+                <p class="section-paragraph">
+                    <ol class="list-decimal pl-6 2xl:text-xl">
+                        <li>Menjadi wadah bagi mahasiswa FST untuk mengembangkan minat dan potensi dalam bidang akademik, kepenulisan, serta bisnis.</li>
+                        <li>Memfasilitasi mahasiswa FST melalui serangkaian kegiatan pelatihan yang berorientasi terhadap kebermanfaatan.</li>
+                        <li>Membentuk pola pikir kritis dan solutif pada mahasiswa FST sehingga dapat berkontribusi dalam menyelesaikan permasalahan lingkungan sekitar.</li>
+                        <li>Membangun solidaritas antar anggota Komunitas Prestasi atas asas kekeluargaan.</li>
+                    </ol>
+                </p>
+            </div>
+        </section>
+
+        <!-- Kabinet Cakrawala Karya -->
+        <section class="w-full pt-6 mt-16 lg:mt-0 lg:w-[375px] lg:pt-0 lg:mt-0 xl:w-[500px] 2xl:w-[610px]">
+            <h2 class="secondary-title">Kabinet <br> Cakrawala Karya</h2>
+            <p class="section-paragraph">
+                KOMPRES CAKRAWALA KARYA diharapkan akan selalu menjadi organisasi yang dapat mewadahi seluruh mahasiswa Fakultas Sains dan Teknologi (FST) yang memiliki minat dan bakat dalam bidang kepenulisan serta riset. Selain itu KOMPRES juga mampu memberikan tempat yang nyaman bagi mahasiswa FST dalam belajar berorganisasi yang terlaksana dalam setiap program kerja dan agenda sesuai dengan tugas pokok dan fungsi masing masing yang diberikan.
+            </p>
+            <br class="hidden 2xl:block">
+            <p class="section-paragraph">
+                Setiap bagian dari KOMPRES diharapkan selalu menunjukkan eksistensinya dengan memiliki pemikiran yang kreatif, inovatif dalam mewujudkan karya sebagai output dari minat dan bakat yang dikembangkan. KOMPRES akan selalu membersamai langkah, bertanggung jawab, dan selalu dapat diandalkan dimanapun serta kapanpun berada.
+            </p>
+        </section>
+    </div>
+
+    <!-- Riskel -->
+    <div class="container department" id="riskel">
+        <section class="w-full pt-6">
+            <h2 class="secondary-title">RISKEL <br> Riset dan Keilmuan</h2>
+            <p class="section-paragraph">
+                Departemen yang bertanggung jawab untuk mempersiapkan pembinaan terkait kepenulisan dan riset KOMPRES.
+            </p>
+            <h2 class="text-2xl font-bold pt-4 pb-2">Program Kerja & Agenda</h2>
+            <div class="sm:flex sm:flex-wrap">
+                <div class="subsection dept--card">
+                    <div>
+                        <h3 class="subsection--title">Info Lomba</h3>
+                        <p class="section-paragraph">
+                            Agenda penting dalam merekap segala bentuk perlombaan mulai dari KTI, essay, business case, dan sebagainya setiap bulan kepada sahabat KOMPRES.
+                        </p>
+                    </div>
+                    <div class="2xl-h-[500px]">
+                        <img src="/img/infoLomba.jpg" alt="Info Lomba">
+                    </div>
+                </div>
+                <div class="subsection dept--card">
+                    <div>
+                        <h3 class="subsection--title">Temu Ilmiah</h3>
+                        <p class="section-paragraph">
+                            Memberikan insight, sharing bersama dengan menghadirkan salah satu narasumber hebat dan multitalenta.
+                        </p>
+                    </div>
+                    <div class="2xl-h-[500px]">
+                        <img src="/img/temuIlmiah.jpg" alt="Temu Ilmiah">
+                    </div>
+                </div>
+            </div>
+            <div class="sm:flex sm:flex-wrap">
+                <div class="subsection dept--card">
+                    <div>
+                        <h3 class="subsection--title">Bulletin KOMPRES</h3>
+                        <p class="section-paragraph">
+                            Melakukan rekap materi penting sebagai hasil output temu ilmiah yang divisualisasikan dalam satu ringkasan sebagai bahan pembuatan infografis KOMPRES.
+                        </p>
+                    </div>
+                    <div class="2xl-h-[500px]">
+                        <img src="/img/bulletinKompres.jpg" alt="Bulletin KOMPRES">
+                    </div>
+                </div>
+                <div class="subsection dept--card">
+                    <div>
+                        <h3 class="subsection--title">Develop Website KOMPRES</h3>
+                        <p class="section-paragraph">
+                            Mengelola website yang meliputi update info penting serta segala hal yang dikembangkan dalam KOMPRES kedepannya.
+                        </p>
+                    </div>
+                    <div class="2xl-h-[500px]">
+                        <img src="/img/webDeveloper.jpg" alt="Web Development">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- PR -->
+    <div class="container department" id="pr">
+        <section class="w-full pt-6">
+            <h2 class="secondary-title">PR <br> Public Relation</h2>
+            <p class="section-paragraph">
+                Departemen yang bertugas memberikan informasi, mengelola media sosial, dan membuat konten kreatif terkait KOMPRES.
+            </p>
+            <h2 class="text-2xl font-bold pt-4 pb-2">Program Kerja & Agenda</h2>
+            <div class="sm:flex sm:flex-wrap">
+                <div class="subsection dept--card">
+                    <div>
+                        <h3 class="subsection--title">Podcast Berbagi Insight</h3>
+                        <p class="section-paragraph">
+                            Sarana menarik minat sebagai pemberi wawasan maupun insight kepada sahabat KOMPRES maupun mahasiswa FST melalui voice audio antara moderator dan narasumber.
+                        </p>
+                    </div>
+                    <div class="2xl-h-[500px]">
+                        <img src="/img/podcastKompres.jpg" alt="Podcast Berbagi Insight">
+                    </div>
+                </div>
+                <div class="subsection dept--card">
+                    <div>
+                        <h3 class="subsection--title">Analisa SWOT KOMPRES</h3>
+                        <p class="section-paragraph">
+                            Agenda baru untuk mengetahui urgensi, evaluation, dan controlling kepengurusan KOMPRES melalui analisa SWOT dari sahabat KOMPRES.
+                        </p>
+                    </div>
+                    <div class="2xl-h-[500px]">
+                        <img src="/img/analisisSWOT.jpg" alt="Analisis SWOT Kompres">
+                    </div>
+                </div>
+            </div>
+            <div class="sm:flex sm:flex-wrap">
+                <div class="subsection dept--card">
+                    <div>
+                        <h3 class="subsection--title">Konten Kreatif & Infografis KOMPRES</h3>
+                        <p class="section-paragraph">
+                            Sarana inovatif dan kreativitas KOMPRES dalam menuangkan eksistensinya sebagai sebuah organisasi kepenulisan melalaui infografis dan konten kreatif.
+                        </p>
+                    </div>
+                    <div class="2xl-h-[500px]">
+                        <img src="/img/kontenKreatif.jpg" alt="Infografis dan Konten Kreatif">
+                    </div>
+                </div>
+                <div class="subsection dept--card">
+                    <div>
+                        <h3 class="subsection--title">Mengelola Media Sosial KOMPRES</h3>
+                        <p class="section-paragraph">
+                            Agenda rutin Departemen PR dalam mengelola seluruh official  account Instagram KOMPRES.
+                        </p>
+                    </div>
+                    <div class="2xl-h-[500px]">
+                        <img src="/img/mediaSosial.jpg" alt="Media Sosial">
+                    </div>
+                </div>     
+            </div>
+        </section>
+    </div>
+
+    <!-- HRD -->
+    <div class="container department" id="hrd">
+        <section class="w-full pt-6">
+            <h2 class="secondary-title">HRD <br> Human Resources & Development</h2>
+            <p class="section-paragraph">
+                Departemen yang berperan dalam membentuk internalisasi yang baik melalui mentoring maupun mentoring intensif serta mengembangkan Sumber Daya Manusia intern dan ekstern KOMPRES.
+            </p>
+            <h2 class="text-2xl font-bold pt-4">Program Kerja & Agenda</h2>
+            <div class="sm:flex sm:flex-wrap">
+                <div class="subsection dept--card">
+                    <div>
+                        <h3 class="subsection--title">Mentoring</h3>
+                        <p class="section-paragraph">
+                            Agenda utama KOMPRES sebagai pengasah skill critical control point sahabat KOMPRES terutama mahasiswa FST dalam mengikuti suatu kompetisi ilmiah maupun non-ilmiah dengan menghadirkan mentor sesuai bidangnya masing-masing.
+                        </p>
+                    </div>
+                    <div class="2xl-h-[500px]">
+                        <img src="/img/mentoring.jpg" alt="Mentoring">
+                    </div>
+                </div>
+                <div class="subsection dept--card">
+                    <div>
+                        <h3 class="subsection--title">Rekap Prestasi</h3>
+                        <p class="section-paragraph">
+                            Melakukan rekap atau pendataan terhadap prestasi-prestasi ilmiah maupun non-ilmiah yang berhasil diraih anggota KOMPRES.
+                        </p>
+                    </div>
+                    <div class="2xl-h-[500px]">
+                        <img src="/img/rekapPrestasi.jpg" alt="Rekap Prestasi">
+                    </div>
+                </div>
+            </div>
+            <div class="sm:flex sm:flex-wrap">
+                <div class="subsection dept--card">
+                    <div>
+                        <h3 class="subsection--title">Mentoring Intensif</h3>
+                        <p class="section-paragraph">
+                            Memberikan pendampingan secara intensif, masif, dan intens kepada sahabat KOMPRES dalam mengikuti lomba dari awal sampai selesai oleh perwakilan mentor sesuai bidangnya masing-masing.
+                        </p>
+                    </div>
+                    <div class="2xl:h-[500px]">
+                        <img src="/img/intensiveMentoring.jpg" alt="Intensive Mentoring">
+                    </div>
+                </div>
+                <div class="subsection dept--card">
+                    <div>
+                        <h3 class="subsection--title">Upgrading KOMPRES</h3>
+                        <p class="section-paragraph">
+                            Sarana internalisasi kepada pengurus KOMPRES dengan melakukan sharing bareng melalui narasumber hebat yang hadir bersama.
+                        </p>
+                    </div>
+                    <div class="2xl:h-[500px]">
+                        <img src="/img/upgradingKompres.jpg" alt="Upgrading Kompres">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center bg-gray-900 text-white mt-10 w-full">
+        <div class="px-6 pt-3 w-full">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/kompres_fstunair/" type="button" class="rounded-full border-2 border-white w-9 h-9 m-1" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="fill-white w-4 h-full mx-auto"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/kompres-fstunair/" type="button" class="rounded-full border-2 border-white w-9 h-9 m-1" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="fill-white w-4 h-full mx-auto"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+            </a>
+
+            <!-- Spotify -->
+            <a href="https://open.spotify.com/show/6TKqjHngHkaAw66erEdbkC" type="button" class="rounded-full border-2 border-white w-9 h-9 m-1" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="fill-white w-4 h-full mx-auto"><path d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z"/></svg>
+            </a>
+        </div>
+        
+        <!-- Trademark :3 -->
+        <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+            <a class="text-white" href="https://www.instagram.com/williamtanardi/" target="_blank">William Tanardi</a>
+        </div>
+    </footer>
+    <script defer src="/script.js"></script>
+</body>
+</html>
+

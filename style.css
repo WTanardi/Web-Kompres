@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    html, body {
+        scroll-behavior: smooth;
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@layer utilities {
+
+    .left-50 {
+        left: 50%;
+    }
+
+    .right-50 {
+        right: 50%;
+    }
+
+    .top-50 {
+        top: 50%;
+    }
+
+    .-z-1 {
+        z-index: -1;
+    }
+
+    .secondary-title {
+        @apply text-3xl font-bold 2xl:text-4xl;
+    }
+
+    .secondary-title::before {
+        content: "";
+        @apply block w-10 h-2 bg-clr-accent rounded-full mb-2;
+    }
+
+    .section-paragraph {
+        @apply text-clr-primary my-1 w-full 2xl:text-xl pb-3;
+    }
+
+    [id] {
+    scroll-margin-top: 100px;
+    }
+
+    .left-percentage {
+        left: 5%;
+    }
+
+    .h-screen-partial {
+        height: 80vh;
+    }
+
+    .nav-dot {
+        transition: background 200ms, border-color 200ms;
+    }
+
+    .selected-circle {
+        @apply border-clr-accent bg-clr-accent;
+    }
+
+    .nav-dot:hover span {
+        opacity: 1;
+    }
+
+    .subsection {
+        @apply pt-2;
+    }
+
+    .subsection--title {
+        @apply font-bold text-xl 2xl:text-2xl;
+    }
+
+    .subsection--title::before {
+        content: "";
+        @apply block w-8 h-1.5 bg-yellow-400 rounded-full mb-2;
+    }
+
+    .header {
+        background-color: transparent;
+    }
+}
+
+@layer components {
+
+    .department {
+        @apply  mt-16 md:mt-24 items-center mx-auto px-8 md:pl-28 md:px-14 lg:pl-40 lg:px-24 w-full;
+    }
+
+    .dept--card {
+        @apply sm:w-[17rem] sm:mr-auto sm:flex sm:flex-col sm:justify-between lg:w-[22rem] xl:w-[30rem] 2xl:w-72 2xl:my-4 2xl:w-5/12 mt-2;
+    }
+
+    .article {
+        background: rgba(255, 255, 255, 0.23);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.54);
+        /* padding: 1em 3em; */
+        margin-top: 1em;
+        @apply py-4 px-8;
+    }
+
+    .article-title {
+        @apply font-bold text-center text-2xl 2xl:text-3xl max-w-xl mx-auto;
+    }
+
+    .article-paragraph {
+        @apply pt-3;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .active {
+        background-color: rgba(0,0,0,0.4);
+        @apply backdrop-blur;
+    }
+}

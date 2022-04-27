@@ -1,0 +1,15 @@
+{
+  "name": "web-kompres",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./style.css -o ./output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.0"
+  }
+}
